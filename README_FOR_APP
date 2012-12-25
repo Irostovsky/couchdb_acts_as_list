@@ -1,2 +1,2 @@
-gem build lorem.gemspec
-gem push lorem-0.0.1.gem
+gem build couchdb_acts_as_list.gemspec
+gem push couchdb_acts_as_list-0.0.1.gem
