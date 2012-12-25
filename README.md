@@ -18,7 +18,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+class Locale < CouchRest::Model::Base
+  include CouchdbActsAsList
+end
+
+## Instance methods
+
+locale.position
+locale.insert_at 2
 
 ## Contributing
 
