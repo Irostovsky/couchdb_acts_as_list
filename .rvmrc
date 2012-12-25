@@ -1,0 +1,1 @@
+rvm use 1.9.3@couchdb_acts_as_list --create
