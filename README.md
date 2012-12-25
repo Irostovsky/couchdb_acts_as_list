@@ -1,6 +1,6 @@
 # CouchdbActsAsList
 
-TODO: Write a gem description
+Implementation of the acts as list gem for CouchDB
 
 ## Installation
 
@@ -19,7 +19,9 @@ Or install it yourself as:
 ## Usage
 
 class Locale < CouchRest::Model::Base
+
   include CouchdbActsAsList
+
 end
 
 ## Instance methods
