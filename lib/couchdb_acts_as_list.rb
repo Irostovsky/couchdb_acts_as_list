@@ -13,7 +13,7 @@ module CouchdbActsAsList
 
 
       def insert_at pos
-        pos = [[pos.to_i, Locale.count].min, 1].max
+        pos = [[pos.to_i, self.class.count].min, 1].max
         decrement_positions_on_lower_items self.position
         self.update_attributes position: nil
         increment_positions_on_lower_items pos
@@ -22,7 +22,7 @@ module CouchdbActsAsList
 
       private
       def set_position
-        self.position = Locale.count + 1
+        self.position = self.class.count + 1
       end
 
       def reorder_lower_items
